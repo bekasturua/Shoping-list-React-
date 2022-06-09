@@ -1,7 +1,9 @@
 import React from "react";
+
+import NewExpense from "./components/NewExpense/NewExspense";
 import Expenses from "./components/Expenses/Expenses";
 
-const App = () =>{
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -34,10 +36,10 @@ const App = () =>{
   document.getElementById("root");
   return (
     <div>
-      <h2>Let's get started!</h2>
-      <Expenses items={expenses}/>
+      <NewExpense />
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
