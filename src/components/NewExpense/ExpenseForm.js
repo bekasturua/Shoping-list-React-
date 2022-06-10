@@ -6,20 +6,20 @@ const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  //   const [userInput, setUserInput] = useState({
-  //     enteredTiTle: "",
-  //     setEnteredAmount: "",
-  //     setEnteredDate: "",
-  //   });
+  // const [userInput, setUserInput] = useState({
+  //   enteredTitle: '',
+  //   enteredAmount: '',
+  //   enteredDate: '',
+  // });
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
     // setUserInput({
     //   ...userInput,
-    //   enteredTiTle: event.target.value,
+    //   enteredTitle: event.target.value,
     // });
     // setUserInput((prevState) => {
-    //   return { ...prevState, enteredTiTle: event.target.value };
+    //   return { ...prevState, enteredTitle: event.target.value };
     // });
   };
 
@@ -27,7 +27,7 @@ const ExpenseForm = (props) => {
     setEnteredAmount(event.target.value);
     // setUserInput({
     //   ...userInput,
-    //   setEnteredAmount: event.target.value,
+    //   enteredAmount: event.target.value,
     // });
   };
 
@@ -35,7 +35,7 @@ const ExpenseForm = (props) => {
     setEnteredDate(event.target.value);
     // setUserInput({
     //   ...userInput,
-    //   setEnteredDate: event.target.value,
+    //   enteredDate: event.target.value,
     // });
   };
 
